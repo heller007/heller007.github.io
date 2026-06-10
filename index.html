@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vineet Pandey — M.Tech Signal Processing &amp; Machine Learning. C++, PyTorch, embedded DSP, computer vision.">
+  <title>Vineet Pandey</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Vineet Pandey</a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
+      <button
+        type="button"
+        class="theme-toggle"
+        id="theme-toggle"
+        aria-label="Switch to light mode"
+        aria-pressed="false"
+      >
+        <span class="theme-toggle__label" aria-hidden="true">Light</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== EDITABLE: HERO ===== -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <p class="hero__label">Portfolio</p>
+        <h1 id="hero-heading" class="hero__name">Vineet Pandey</h1>
+        <p class="hero__tagline">M.Tech, Signal Processing &amp; Machine Learning — NIT Karnataka</p>
+        <p class="hero__intro">
+          I build signal processing pipelines and machine learning systems with an emphasis on
+          correctness, efficiency, and deployability. My work spans C++ libraries, PyTorch research,
+          and embedded DSP — always grounded in measurable outcomes.
+        </p>
+        <ul class="hero__links">
+          <li>
+            <a href="https://github.com/heller007" rel="noopener noreferrer">GitHub</a>
+          </li>
+          <li>
+            <a href="mailto:[vineetxyz001@gmail.com]">Email</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1P9d0yetAXXmlRMY1tzyD80LKvDye-wuy/view?usp=sharing">Resume</a>
+          </li>
+          <li>
+            <a href="linkedin.com/in/heller007" rel="noopener noreferrer">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- ===== END HERO ===== -->
+
+    <!-- ===== EDITABLE: ABOUT ===== -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading" class="section__heading">About</h2>
+        <div class="section__body about__body">
+          <p>
+            I hold a B.Tech in Computer Science and Engineering and am completing an M.Tech in
+            Signal Processing &amp; Machine Learning at NIT Karnataka, graduating May 2026.
+          </p>
+          <p>
+            My interests sit at the intersection of frontier ML — diffusion models, state-space
+            models, vision-language models, and agents — and the systems work required to run them
+            in practice: embedded deployment, DSP optimization, and computer vision pipelines.
+          </p>
+          <p>
+            I qualified GATE 2024 in Computer Science and in Data Science &amp; Artificial
+            Intelligence, reflecting a foundation in both theoretical rigor and applied ML.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ===== END ABOUT ===== -->
+
+    <!-- ===== EDITABLE: PROJECTS ===== -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading" class="section__heading">Projects</h2>
+        <ul class="project-grid" role="list">
+
+          <!-- PROJECT CARD — copy this block to add a new project -->
+          <li class="project-card">
+            <h3 class="project-card__title">dsp++</h3>
+            <p class="project-card__desc">C++ digital signal processing library.</p>
+            <ul class="tag-list" role="list" aria-label="Technologies">
+              <li>C++</li>
+              <li>DSP</li>
+              <li>CMake</li>
+            </ul>
+            <ul class="project-card__links" role="list">
+              <li><a href="https://github.com/heller007/dsp++" rel="noopener noreferrer">Repository</a></li>
+            </ul>
+          </li>
+          <!-- END PROJECT CARD -->
+
+          <!-- PROJECT CARD -->
+          <li class="project-card">
+            <h3 class="project-card__title">ip++</h3>
+            <p class="project-card__desc">C++ image processing library with a Dear ImGui GUI.</p>
+            <ul class="tag-list" role="list" aria-label="Technologies">
+              <li>C++</li>
+              <li>ImGui</li>
+              <li>stb_image</li>
+              <li>CMake</li>
+            </ul>
+            <ul class="project-card__links" role="list">
+              <li><a href="https://github.com/heller007/ip++" rel="noopener noreferrer">Repository</a></li>
+            </ul>
+          </li>
+          <!-- END PROJECT CARD -->
+
+          <!-- PROJECT CARD -->
+          <li class="project-card">
+            <h3 class="project-card__title">ChronoTrack</h3>
+            <p class="project-card__desc">
+              M.Tech thesis — single-object tracker treating inter-frame interval as a
+              first-class architectural input.
+            </p>
+            <ul class="tag-list" role="list" aria-label="Technologies">
+              <li>PyTorch</li>
+              <li>DINOv2</li>
+              <li>Mamba-2</li>
+              <li>SSM</li>
+            </ul>
+            <ul class="project-card__links" role="list">
+              <li><a href="[CHRONOTRACK_REPO_OR_PAPER_URL]">[Paper / Repo]</a></li>
+              <li><span class="placeholder-link">[Metrics: e.g. AUC, FPS on dataset]</span></li>
+            </ul>
+          </li>
+          <!-- END PROJECT CARD -->
+
+          <!-- PROJECT CARD -->
+          <li class="project-card">
+            <h3 class="project-card__title">Model Compression Study</h3>
+            <p class="project-card__desc">
+              Quantization, pruning, and knowledge distillation on CIFAR-10.
+            </p>
+            <ul class="tag-list" role="list" aria-label="Technologies">
+              <li>PyTorch</li>
+              <li>quantization</li>
+              <li>KD</li>
+            </ul>
+            <ul class="project-card__links" role="list">
+              <li><a href="[MODEL_COMPRESSION_REPO_URL]">Repository</a></li>
+            </ul>
+          </li>
+          <!-- END PROJECT CARD -->
+
+          <!-- PROJECT CARD -->
+          <li class="project-card">
+            <h3 class="project-card__title">Code-mixed Hinglish Classification</h3>
+            <p class="project-card__desc">
+              Hierarchical cybercrime complaint classifier on XLM-RoBERTa.
+            </p>
+            <ul class="tag-list" role="list" aria-label="Technologies">
+              <li>NLP</li>
+              <li>XLM-R</li>
+              <li>code-mixing</li>
+            </ul>
+            <ul class="project-card__links" role="list">
+              <li><a href="[HINGLISH_CLASSIFIER_REPO_URL]">Repository</a></li>
+            </ul>
+          </li>
+          <!-- END PROJECT CARD -->
+
+          <!-- PROJECT CARD -->
+          <li class="project-card">
+            <h3 class="project-card__title">Lung Nodule Segmentation</h3>
+            <p class="project-card__desc">LIDC-IDRI medical image segmentation.</p>
+            <ul class="tag-list" role="list" aria-label="Technologies">
+              <li>medical imaging</li>
+              <li>segmentation</li>
+              <li>MedSAM2</li>
+            </ul>
+            <ul class="project-card__links" role="list">
+              <li><a href="[LUNG_NODULE_REPO_URL]">Repository</a></li>
+            </ul>
+          </li>
+          <!-- END PROJECT CARD -->
+
+        </ul>
+      </div>
+    </section>
+    <!-- ===== END PROJECTS ===== -->
+
+    <!-- ===== EDITABLE: SKILLS ===== -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading" class="section__heading">Skills</h2>
+        <dl class="skills-list">
+          <div class="skills-group">
+            <dt>Languages</dt>
+            <dd>
+              <ul class="chip-list" role="list">
+                <li>C++</li>
+                <li>Python</li>
+                <li>C</li>
+                <li>MATLAB</li>
+                <li>Verilog</li>
+              </ul>
+            </dd>
+          </div>
+          <div class="skills-group">
+            <dt>ML / DL</dt>
+            <dd>
+              <ul class="chip-list" role="list">
+                <li>PyTorch</li>
+                <li>computer vision</li>
+                <li>NLP</li>
+                <li>quantization</li>
+                <li>knowledge distillation</li>
+              </ul>
+            </dd>
+          </div>
+          <div class="skills-group">
+            <dt>Systems</dt>
+            <dd>
+              <ul class="chip-list" role="list">
+                <li>CUDA</li>
+                <li>embedded</li>
+                <li>DSP</li>
+                <li>Verilog</li>
+                <li>CMake</li>
+              </ul>
+            </dd>
+          </div>
+          <div class="skills-group">
+            <dt>Tools</dt>
+            <dd>
+              <ul class="chip-list" role="list">
+                <li>Git</li>
+                <li>CMake</li>
+                <li>Docker</li>
+                <li>Cursor</li>
+                <li>Linux</li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <!-- ===== END SKILLS ===== -->
+  </main>
+
+  <!-- ===== EDITABLE: FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer__copy">
+        <small>&copy; <span id="year"></span> Vineet Pandey</small>
+      </p>
+      <p class="footer__note">
+        <small>
+          <a href="https://github.com/heller007" rel="noopener noreferrer">GitHub</a>
+          &middot; Built from scratch — vanilla HTML, CSS, and JS
+        </small>
+      </p>
+    </div>
+  </footer>
+  <!-- ===== END FOOTER ===== -->
+</body>
+</html>
