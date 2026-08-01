@@ -6,6 +6,7 @@
   <meta name="description" content="Vineet Pandey — M.Tech Signal Processing &amp; Machine Learning. C++, PyTorch, embedded DSP, computer vision.">
   <title>Vineet Pandey</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="projects-data.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -13,7 +14,7 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#">Vineet Pandey</a>
+      <a class="logo" href="index.html">Vineet Pandey</a>
       <nav class="site-nav" aria-label="Primary">
         <ul>
           <li><a href="#about">About</a></li>
@@ -41,9 +42,7 @@
         <h1 id="hero-heading" class="hero__name">Vineet Pandey</h1>
         <p class="hero__tagline">M.Tech, Signal Processing &amp; Machine Learning — NIT Karnataka</p>
         <p class="hero__intro">
-          I build signal processing pipelines and machine learning systems with an emphasis on
-          correctness, efficiency, and deployability. My work spans C++ libraries, PyTorch research,
-          and embedded DSP — always grounded in measurable outcomes.
+          I build across the ML stack and below it: RISC-V on FPGA, DSP, computer vision, and NLP. Trained in signal processing and machine learning; projects in object tracking, segmentation, vision-language QA, and language modeling.
         </p>
         <ul class="hero__links">
           <li>
@@ -53,7 +52,7 @@
             <a href="mailto:[vineetxyz001@gmail.com]">Email</a>
           </li>
           <li>
-            <a href="https://drive.google.com/file/d/1P9d0yetAXXmlRMY1tzyD80LKvDye-wuy/view?usp=sharing">Resume</a>
+            <a href="https://drive.google.com/file/d/12AXvvrNshgbkj1NIjP2DW7we21nnOcfk/view?usp=drive_link" rel="noopener noreferrer">Resume</a>
           </li>
           <li>
             <a href="linkedin.com/in/heller007" rel="noopener noreferrer">LinkedIn</a>
@@ -94,120 +93,189 @@
 
           <!-- PROJECT CARD — copy this block to add a new project -->
           <li class="project-card">
-            <h3 class="project-card__title">dsp++</h3>
-            <p class="project-card__desc">C++ digital signal processing library.</p>
-            <ul class="tag-list" role="list" aria-label="Technologies">
-              <li>C++</li>
-              <li>DSP</li>
-              <li>CMake</li>
-            </ul>
-            <ul class="project-card__links" role="list">
-              <li><a href="https://github.com/heller007/dsp-cpp" rel="noopener noreferrer">Repository</a></li>
-            </ul>
+            <a class="project-card__link" href="project.html?id=dsp-cpp">
+              <h3 class="project-card__title">dsp++</h3>
+              <p class="project-card__desc">C++ digital signal processing library.</p>
+              <ul class="tag-list" role="list" aria-label="Technologies">
+                <li>C++</li>
+                <li>DSP</li>
+                <li>CMake</li>
+              </ul>
+              <span class="project-card__cta">View project</span>
+            </a>
           </li>
           <!-- END PROJECT CARD -->
 
           <!-- PROJECT CARD -->
           <li class="project-card">
-            <h3 class="project-card__title">ip++</h3>
-            <p class="project-card__desc">C++ image processing library with a Dear ImGui GUI.</p>
-            <ul class="tag-list" role="list" aria-label="Technologies">
-              <li>C++</li>
-              <li>ImGui</li>
-              <li>stb_image</li>
-              <li>CMake</li>
-            </ul>
-            <ul class="project-card__links" role="list">
-              <li><a href="https://github.com/heller007/imgproc-cpp" rel="noopener noreferrer">Repository</a></li>
-            </ul>
+            <a class="project-card__link" href="project.html?id=imgproc-cpp">
+              <h3 class="project-card__title">ip++</h3>
+              <p class="project-card__desc">C++ image processing library with a Dear ImGui GUI.</p>
+              <ul class="tag-list" role="list" aria-label="Technologies">
+                <li>C++</li>
+                <li>ImGui</li>
+                <li>stb_image</li>
+                <li>CMake</li>
+              </ul>
+              <span class="project-card__cta">View project</span>
+            </a>
           </li>
           <!-- END PROJECT CARD -->
 
           <!-- PROJECT CARD -->
           <li class="project-card">
-            <h3 class="project-card__title">Novel Tracker</h3>
-            <p class="project-card__desc">
-              M.Tech thesis — single-object tracker treating inter-frame interval as a
-              first-class architectural input.
-            </p>
-            <ul class="tag-list" role="list" aria-label="Technologies">
-              <li>PyTorch</li>
-              <li>DINOv2</li>
-              <li>Mamba-2</li>
-              <li>SSM</li>
-            </ul>
-            <ul class="project-card__links" role="list">
-              <li><a href="[CHRONOTRACK_REPO_OR_PAPER_URL]">[Paper / Repo]</a></li>
-              <li><span class="placeholder-link">[Metrics: e.g. AUC, FPS on dataset]</span></li>
-            </ul>
+            <a class="project-card__link" href="project.html?id=novel-tracker">
+              <h3 class="project-card__title">Novel Tracker</h3>
+              <p class="project-card__desc">
+                M.Tech thesis — single-object tracker treating inter-frame interval as a
+                first-class architectural input.
+              </p>
+              <ul class="tag-list" role="list" aria-label="Technologies">
+                <li>PyTorch</li>
+                <li>DINOv2</li>
+                <li>Mamba-2</li>
+                <li>SSM</li>
+              </ul>
+              <span class="project-card__cta">View project</span>
+            </a>
           </li>
           <!-- END PROJECT CARD -->
 
           <!-- PROJECT CARD -->
           <li class="project-card">
-            <h3 class="project-card__title">Model Compression Study</h3>
-            <p class="project-card__desc">
-              Quantization, pruning, and knowledge distillation on CIFAR-10.
-            </p>
-            <ul class="tag-list" role="list" aria-label="Technologies">
-              <li>PyTorch</li>
-              <li>quantization</li>
-              <li>KD</li>
-            </ul>
-            <ul class="project-card__links" role="list">
-              <li><a href="[MODEL_COMPRESSION_REPO_URL]">Repository</a></li>
-            </ul>
+            <a class="project-card__link" href="project.html?id=defect-vqa">
+              <h3 class="project-card__title">VQA Defect Detection</h3>
+              <p class="project-card__desc">
+                Visual question answering for industrial defect detection on VisA and MVTec AD.
+              </p>
+              <ul class="tag-list" role="list" aria-label="Technologies">
+                <li>VQA</li>
+                <li>VisA</li>
+                <li>MVTec</li>
+                <li>PyTorch</li>
+              </ul>
+              <span class="project-card__cta">View project</span>
+            </a>
           </li>
           <!-- END PROJECT CARD -->
 
           <!-- PROJECT CARD -->
           <li class="project-card">
-            <h3 class="project-card__title">Code-mixed Hinglish Classification</h3>
-            <p class="project-card__desc">
-              Hierarchical cybercrime complaint classifier on XLM-RoBERTa.
-            </p>
-            <ul class="tag-list" role="list" aria-label="Technologies">
-              <li>NLP</li>
-              <li>XLM-R</li>
-              <li>code-mixing</li>
-            </ul>
-            <ul class="project-card__links" role="list">
-              <li><a href="[HINGLISH_CLASSIFIER_REPO_URL]">Repository</a></li>
-            </ul>
+            <a class="project-card__link" href="project.html?id=underwater">
+              <h3 class="project-card__title">Underwater Debris Detection</h3>
+              <p class="project-card__desc">
+                Cost-aware selective enhancement for marine-debris detection (SeaClear LOSO).
+              </p>
+              <ul class="tag-list" role="list" aria-label="Technologies">
+                <li>Python</li>
+                <li>computer vision</li>
+                <li>SeaClear</li>
+              </ul>
+              <span class="project-card__cta">View project</span>
+            </a>
           </li>
           <!-- END PROJECT CARD -->
-          
-           <!-- PROJECT CARD -->
-              <li class="project-card">
-                <h3 class="project-card__title">Pipelined RISC-V Processor</h3>
-                <p class="project-card__desc">
-                  A 5-stage pipelined RV32I/M CPU in Verilog with data forwarding, hazard
-                  detection, and a self-checking unit + integration test suite (CI on GitHub Actions).
-                </p>
-                <ul class="tag-list" role="list" aria-label="Technologies">
-                  <li>Verilog</li>
-                  <li>RISC-V</li>
-                  <li>Icarus Verilog</li>
-                  <li>Quartus</li>
-                </ul>
-                <ul class="project-card__links" role="list">
-                  <li><a href="https://github.com/heller007/pipelined-riscv">Repository</a></li>
-                </ul>
-              </li>
-              <!-- END PROJECT CARD -->
 
           <!-- PROJECT CARD -->
           <li class="project-card">
-            <h3 class="project-card__title">Lung Nodule Segmentation</h3>
-            <p class="project-card__desc">LIDC-IDRI medical image segmentation.</p>
-            <ul class="tag-list" role="list" aria-label="Technologies">
-              <li>medical imaging</li>
-              <li>segmentation</li>
-              <li>MedSAM2</li>
-            </ul>
-            <ul class="project-card__links" role="list">
-              <li><a href="[LUNG_NODULE_REPO_URL]">Repository</a></li>
-            </ul>
+            <a class="project-card__link" href="project.html?id=tinyml-seminar">
+              <h3 class="project-card__title">Model Compression Study</h3>
+              <p class="project-card__desc">
+                Quantization, pruning, and knowledge distillation on CIFAR-10.
+              </p>
+              <ul class="tag-list" role="list" aria-label="Technologies">
+                <li>PyTorch</li>
+                <li>quantization</li>
+                <li>KD</li>
+                <li>TinyML</li>
+              </ul>
+              <span class="project-card__cta">View project</span>
+            </a>
+          </li>
+          <!-- END PROJECT CARD -->
+
+          <!-- PROJECT CARD -->
+          <li class="project-card">
+            <a class="project-card__link" href="project.html?id=cybergaurd">
+              <h3 class="project-card__title">Code-mixed Hinglish Classification</h3>
+              <p class="project-card__desc">
+                Hierarchical cybercrime complaint classifier on XLM-RoBERTa.
+              </p>
+              <ul class="tag-list" role="list" aria-label="Technologies">
+                <li>NLP</li>
+                <li>XLM-R</li>
+                <li>code-mixing</li>
+              </ul>
+              <span class="project-card__cta">View project</span>
+            </a>
+          </li>
+          <!-- END PROJECT CARD -->
+
+          <!-- PROJECT CARD -->
+          <li class="project-card">
+            <a class="project-card__link" href="project.html?id=pipelined-riscv">
+              <h3 class="project-card__title">Pipelined RISC-V Processor</h3>
+              <p class="project-card__desc">
+                A 5-stage pipelined RV32I/M CPU in Verilog with data forwarding, hazard
+                detection, and a self-checking unit + integration test suite (CI on GitHub Actions).
+              </p>
+              <ul class="tag-list" role="list" aria-label="Technologies">
+                <li>Verilog</li>
+                <li>RISC-V</li>
+                <li>Icarus Verilog</li>
+                <li>Quartus</li>
+              </ul>
+              <span class="project-card__cta">View project</span>
+            </a>
+          </li>
+          <!-- END PROJECT CARD -->
+
+          <!-- PROJECT CARD -->
+          <li class="project-card">
+            <a class="project-card__link" href="project.html?id=lidc-nodule">
+              <h3 class="project-card__title">Lung Nodule Segmentation</h3>
+              <p class="project-card__desc">LIDC-IDRI medical image segmentation.</p>
+              <ul class="tag-list" role="list" aria-label="Technologies">
+                <li>medical imaging</li>
+                <li>segmentation</li>
+                <li>MedSAM2</li>
+              </ul>
+              <span class="project-card__cta">View project</span>
+            </a>
+          </li>
+          <!-- END PROJECT CARD -->
+
+          <!-- PROJECT CARD -->
+          <li class="project-card">
+            <a class="project-card__link" href="project.html?id=liveboard">
+              <h3 class="project-card__title">Liveboard</h3>
+              <p class="project-card__desc">
+                Live lecture board — admin annotates slides; viewers watch ink in realtime.
+              </p>
+              <ul class="tag-list" role="list" aria-label="Technologies">
+                <li>TypeScript</li>
+                <li>realtime</li>
+                <li>web</li>
+              </ul>
+              <span class="project-card__cta">View project</span>
+            </a>
+          </li>
+          <!-- END PROJECT CARD -->
+
+          <!-- PROJECT CARD -->
+          <li class="project-card">
+            <a class="project-card__link" href="project.html?id=prdimp">
+              <h3 class="project-card__title">PrDiMP (Unofficial)</h3>
+              <p class="project-card__desc">
+                Unofficial PyTorch implementation of PrDiMP (CVPR 2020) for visual object tracking.
+              </p>
+              <ul class="tag-list" role="list" aria-label="Technologies">
+                <li>PyTorch</li>
+                <li>tracking</li>
+                <li>PrDiMP</li>
+              </ul>
+              <span class="project-card__cta">View project</span>
+            </a>
           </li>
           <!-- END PROJECT CARD -->
 

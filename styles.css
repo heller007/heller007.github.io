@@ -321,10 +321,6 @@ ol[role="list"] {
 }
 
 .project-card {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
-  padding: var(--space-md);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
@@ -335,11 +331,26 @@ ol[role="list"] {
   border-color: color-mix(in srgb, var(--color-accent) 40%, var(--color-border));
 }
 
+.project-card__link {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: var(--space-md);
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-card__link:hover {
+  color: inherit;
+}
+
 .project-card__title {
   font-size: 1.05rem;
   font-weight: 600;
   margin: 0;
   letter-spacing: -0.01em;
+  color: var(--color-text);
 }
 
 .project-card__desc {
@@ -366,6 +377,19 @@ ol[role="list"] {
   border-radius: var(--radius);
 }
 
+.project-card__cta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  margin-top: var(--space-xs);
+  padding-top: var(--space-xs);
+  border-top: 1px solid var(--color-border);
+}
+
+.project-card__link:hover .project-card__cta {
+  color: var(--color-accent-hover);
+}
+
 .project-card__links {
   display: flex;
   flex-wrap: wrap;
@@ -386,6 +410,157 @@ ol[role="list"] {
   font-size: 0.75rem;
   color: var(--color-text-muted);
   font-style: italic;
+}
+
+/* ===== Project detail page ===== */
+.project-page {
+  padding-block: var(--space-lg) var(--space-xl);
+  min-height: 60vh;
+}
+
+.project-page__back {
+  margin: 0 0 var(--space-md);
+}
+
+.project-page__back a {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.project-page__loading,
+.project-page__missing {
+  color: var(--color-text-muted);
+}
+
+.project-detail__label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+  margin: 0 0 var(--space-sm);
+}
+
+.project-detail__title {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 var(--space-sm);
+  line-height: 1.15;
+}
+
+.project-detail__summary {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 52ch;
+  margin: 0 0 var(--space-md);
+}
+
+.project-detail__section {
+  margin-top: var(--space-lg);
+}
+
+.project-detail__h2 {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-sm);
+}
+
+.project-detail__highlights {
+  margin: 0;
+  padding-left: 1.15rem;
+  max-width: 62ch;
+  color: var(--color-text);
+}
+
+.project-detail__highlights li {
+  margin-bottom: 0.4rem;
+}
+
+.project-detail__highlights li:last-child {
+  margin-bottom: 0;
+}
+
+.project-detail__about {
+  max-width: 62ch;
+}
+
+.project-detail__about p {
+  margin: 0 0 var(--space-sm);
+}
+
+.project-detail__about p:last-child {
+  margin-bottom: 0;
+}
+
+.project-detail__gallery {
+  display: grid;
+  gap: var(--space-sm);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 36rem) {
+  .project-detail__gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-detail__figure {
+  margin: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.project-detail__figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  background: var(--color-bg);
+}
+
+.project-detail__figure figcaption {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  padding: 0.45rem 0.65rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.project-detail__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.project-detail__actions a {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  color: var(--color-text);
+  background: var(--color-surface);
+  transition: border-color var(--transition), color var(--transition);
+}
+
+.project-detail__actions a:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.project-detail__actions a.primary {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 /* ===== Skills ===== */
